@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+background-image: url(https://es.web.img2.acsta.net/r_654_368/newsv7/19/12/02/15/59/4187409.jpg);
+
+background-size: contain;
+}
+div#cartaindividual{
+    border:3px solid rgb(225, 244, 169);
+    background-image: url(https://w0.peakpx.com/wallpaper/640/331/HD-wallpaper-rick-and-morty-morty-portal-fecklessabandon-feckless.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: right;
+    opacity: .9
+}
+div#cartaindividual:hover {
+    opacity: 1.0;
+  }
+#cartaindividual img{
+    margin-top: 10px;
+}
+#btnbtn{
+    margin-top: 15px;
+}
+.card-body h1{
+    color: rgb(214, 239, 188);
+    text-align: center;
+}
+.buscador{
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.buscador input{
+   width: 300px;
+    margin: auto;
+    background-color: rgba(125, 185, 93, 0.986);
+}
+.list-group-flush>.list-group-item {
+background-color: rgba(218, 201, 123, 0.54);
+}
