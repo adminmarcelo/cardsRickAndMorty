@@ -44,3 +44,26 @@ div#cartaindividual:hover {
 .list-group-flush>.list-group-item {
 background-color: rgba(218, 201, 123, 0.54);
 }
+.card{
+   align-items: center;
+   width: 100%;
+}
+#modal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255,0.4)    ;
+}
+.modal-content{
+    background-image: url(https://w0.peakpx.com/wallpaper/640/331/HD-wallpaper-rick-and-morty-morty-portal-fecklessabandon-feckless.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: right;
+    opacity: .9;
+    align-items: center;
+   border: 3px solid rgb(234, 240, 62);
+}
+.modal{
+    
+}

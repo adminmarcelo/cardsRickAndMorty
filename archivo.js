@@ -56,7 +56,7 @@ const cardsPersonaje=(personajes)=>{
       modal.innerHTML=`<!-- Modal -->
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-          <div class="modal-content">
+          <div class="modal-content ">
             <div class="modal-header">
              
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -64,7 +64,7 @@ const cardsPersonaje=(personajes)=>{
 
             //modal
             
-            <div class="card col-4 m-5" style="width: 18rem;">
+            <div class="card col-4 m-5" id="modal" style="width: 18rem;">
             <img src="${image}" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-text"><h1>${name}.</h1></p>
@@ -161,6 +161,22 @@ cartas.innerHTML+=`<div class="card col-4 m-5" style="width: 18rem;">
     
     
   } 
+     //filtro nombre
+     if(personaje.name==ingresado){
+      console.log("hola")
+      const{name,image,id,species,status}=personaje
+     
+  cartas.innerHTML+=`<div class="card col-4 m-5" style="width: 18rem;">
+  <img src="${image}" class="card-img-top" alt="...">
+  <div class="card-body">
+  <p class="card-text"><h1>${name}.</h1></p>
+  <ul class="list-group list-group-flush">
+  <li class="list-group-item"><b>identificación:</b> ${id}</li>
+  <li class="list-group-item"><b>especies:</b> ${species}</li>
+  <li class="list-group-item"><b>Estado: </b>${status}</li>`
+      
+      
+    }
   else {
     cartas.innerHTML=`<h1>No se encontro resultados</h1>`
     personajes()
